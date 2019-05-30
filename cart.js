@@ -8,10 +8,10 @@ fetch(inventory_url, {
     createCatalog(data);
 });
 
+document.querySelector('#order_details').style.display = 'none';
+document.querySelector('#confirm').style.display = 'none';
 
 function createCatalog(products) {
-    document.querySelector('#order_details').style.display = 'none';
-    document.querySelector('#confirm').style.display = 'none';
     let cards = '';
     products.forEach(product => {
         let options = '';
@@ -39,13 +39,15 @@ function createCatalog(products) {
         document.querySelector('.card-img-top').setAttribute('src', event.target.getAttribute('src'));
     });
 
-    document.querySelector('.btn-info').addEventListener('click', function(event) {
-        let cartItems = 0;
-        if(document.querySelector('.badge-primary').innerHTML != "") {
-            cartItems = parseInt(document.querySelector('.badge-primary').innerHTML);
+    document.querySelector('#catalog').addEventListener('click', function(event) {
+        if(event.target.className.indexOf('btn-info') > -1){
+            let cartItems = 0;
+            if(document.querySelector('.badge-primary').innerHTML != "") {
+                cartItems = parseInt(document.querySelector('.badge-primary').innerHTML);
+            }
+            
+            document.querySelector('.badge-primary').innerHTML = cartItems + 1;
         }
-        
-        document.querySelector('.badge-primary').innerHTML = cartItems + 1;
     });
 }
 

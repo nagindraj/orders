@@ -4,6 +4,7 @@
 
 .yelpImage {
     width: 1.75rem;
+    margin-top: -8px;
 }
 
 .img_logo {
@@ -215,4 +216,10 @@ p {
 }
 .btn-success{
     margin: .5rem;
+}
+.threadsName{
+    font-family: cursive;
+    color:#138496;
+    font-weight: bold;
+    font-size: 30px;
 }
