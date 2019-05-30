@@ -1,4 +1,4 @@
-const inventory_url = 'https://cors-anywhere.herokuapp.com/http://mobileapi.us-e2.cloudhub.io/api/listinventory';
+const inventory_url = 'https://cors-anywhere.herokuapp.com/http://mobileapithreads.us-e2.cloudhub.io/api/listinventory';
 fetch(inventory_url, {
     method: 'GET', // or 'PUT' // data can be `string` or {object}!
 }).then(function (response) {

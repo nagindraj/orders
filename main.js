@@ -1,3 +1,4 @@
+
 //Make an api call if the categories is not available in the local storage
 let categories = [];
 const authorizationKey = 'Bearer txLSVZQYCrubCoAK8CW9MatFEfpDmITr-dJ1MWsMYC86lfLrJMIWe17nmJAB8LkoR_90dSNDHbrE7HrEs8E2K1JHkFicoBZ5DAiJrlr5TFARWJuGMKzlF7I8tRrTXHYx';
