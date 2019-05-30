@@ -26,7 +26,7 @@ function createConfirmDetails(data) {
     const orderInfo = '<div class="font-weight-bold">ORDER</div>' + card;
     const deliveryAddress = '<div><h6>DELIVERY ADDRESS</h6>'+ 
         addressDetails.address1 +'</div><div>'+addressDetails.city +'</div><span>'+addressDetails.stateOrProvince +', </span><span>'+addressDetails.postalCode +'</span><div>' +addressDetails.country +'</div>';
-    const paymentDetails = '<div> <h6>Payment Details :</h6><span><i class="fab fa-cc-paypal"></i></span>'+ data.paymentDetails.paymentMethod+'</div><div class="btn btn-success">Confirm Payment </div>'   
+    const paymentDetails = '<div> <h6>Payment Details :</h6><span><i class="fab fa-cc-paypal"></i></span>'+ data.paymentDetails.paymentMethod+'</div><div class="btn btn-success">Confirm Order </div>'   
 
     document.querySelector('#confirm').innerHTML = confirmInfo + deliveryDate + orderInfo + deliveryAddress +paymentDetails;
     document.querySelector('.btn-success').addEventListener('click',function(event){
